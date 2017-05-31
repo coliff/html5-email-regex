@@ -1,10 +1,15 @@
 # email-regex
+
 An email address validator (which includes checking a valid TLD is used) in pure HTML with no JavaScript or dependencies.
 
+
 ## How does it work?
-It uses the HTML5 `pattern` attribute and uses a regex to check against a list of valid TLDs 
+
+It uses the HTML5 `pattern` attribute and uses a regex to check against a list of valid TLDs
+
 
 ## Is it safe to use?
+
 Kind of, but a few points:
 - You should always do server-side validation in addition to any front-end validation.
 
@@ -14,7 +19,9 @@ Kind of, but a few points:
 
 - It doesn't give meaningful feedback if an email address is mistyped. So if someone enters `janedoe@gmail.con` they'll get an invalid message, but won't specify that the TLD is incorrect. I've used https://github.com/amail/Verimail.js before to give inline feedback on mistyped email addresses.
 
+
 ## How did you get the list of valid TLDs?
+
 I scraped the official list with this command:
 `$ curl -s http://data.iana.org/TLD/tlds-alpha-by-domain.txt | sed '1d; s/^ *//; s/ *$//; /^$/d' | awk '{print length" "$0}' | sort -rn | cut -d' ' -f2- | tr '\n' '|' | tr '[:upper:]' '[:lower:]' | sed 's/\(.*\)./\1/`
 
