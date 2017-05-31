@@ -7,8 +7,11 @@ It uses the HTML5 `pattern` attribute and uses a regex to check against a list o
 ## Is it safe to use?
 Kind of, but a few points:
 - You should always do server-side validation in addition to any front-end validation.
+
 - There are new TLDs added regularly so if you don't keep the pattern regex up-to-date you may exclude some newer TLDs.
-- Some older browsers such as Internet Explorer 9 and below and Android 4.4 browser and below don't support the pattern attribute.
+
+- Some older browsers such as Internet Explorer 9 and below and Android 4.4 browser and below don't support the pattern attribute. Check http://caniuse.com/#search=pattern for more details
+
 - It doesn't give meaningful feedback if an email address is mistyped. So if someone enters `janedoe@gmail.con` they'll get an invalid message, but won't specify that the TLD is incorrect. I've used https://github.com/amail/Verimail.js before to give inline feedback on mistyped email addresses.
 
 ## How did you get the list of valid TLDs?
