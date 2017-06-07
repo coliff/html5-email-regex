@@ -18,18 +18,18 @@ Kind of, but a few points:
 
 - Some older browsers such as Internet Explorer 9 and below and Android 4.4 browser and below don't support the `pattern` attribute. iOS prior to 10.3 and safari for MacOS prior to 10.1 still allow forms to be submitted even if the pattern is incorrect. Check http://caniuse.com/#search=pattern for more details.
 
-- It doesn't give meaningful feedback if an email address is mistyped. So if someone enters `janedoe@gmail.con` they'll get an invalid message, but won't specify that the TLD is incorrect. I've used [Verimail(]https://github.com/amail/Verimail.js) and [Mailcheck](https://github.com/mailcheck/mailcheck) with success before to give inline feedback on mistyped email addresses.
+- It doesn't give meaningful feedback if an email address is mistyped. So if someone enters `janedoe@gmail.con` they'll get an invalid message, but won't specify that the TLD is incorrect. I've used [Verimail](https://github.com/amail/Verimail.js) and [Mailcheck](https://github.com/mailcheck/mailcheck) with success before to give inline feedback on mistyped email addresses.
 
 
 ## Are there any other recommended HTML attributes to add?
 
-- Always use `type="email"` rather than `type="text"` to take advantage of browser-based validation and provide hints to autocomplete/autofill users email address.
+- Always use `type="email"` rather than `type="text"` to take advantage of browser-based validation and feedback and provide hints to autocomplete/autofill users email address.
 
 - Add `autocomplete="email"` to help browsers with autocomplete/autofill.
 
 - For good measure, consider adding `maxlength="256"` as no email address can be longer.
 
-- If it's an order form/contact form or similar consider adding the `required` tag to prevent submissions whe this field is empty.
+- If it's an order form/contact form or similar add the `required` tag to prevent submissions whe this field is empty.
 
 
 ## How did you get the list of valid TLDs?
