@@ -1,6 +1,6 @@
 # email-regex
 
-An email address validator (which includes checking a valid TLD is used) in pure HTML with no JavaScript or dependencies. It could be used to improve the user experience by rejecting people's mistyped email addresses.
+An email address validator (which includes checking a valid TLD is used) in pure HTML with no JavaScript or dependencies. It could be used to improve the user experience by rejecting mistyped email addresses.
 
 
 ## How does it work?
