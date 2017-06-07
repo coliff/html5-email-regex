@@ -13,7 +13,9 @@
 body{font-family:"roboto",helvetica,arial,sans-serif;font-size:2rem;padding:0;margin:0;display:block}
 header{background-color: #22699A;background-image:linear-gradient(45deg,#0a1855 0,#38B4D9 100%);margin-top:0;width:100%;padding:40px 0 40px 0}
 h1{color:#fff;font-size:1em;text-align:center;padding-left:0}
-form,input{margin-left:auto;margin-right:auto;padding:8px;max-width:320px}
+form,input{margin-left:auto;margin-right:auto;padding:9px;max-width:320px}
+input[type="email"]:invalid{border:1px solid red;box-shadow:0 0 1px 1px red}
+input[type="email"]:valid{border:1px solid green;box-shadow:0 0 1px 1px green}
 </style>
 <body>
 <a href="https://github.com/coliff/email-regex">
