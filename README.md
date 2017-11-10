@@ -19,7 +19,7 @@ Kind of, but a few points:
 
 - There are new TLDs added regularly so if you don't keep the pattern regex up-to-date you may exclude newer TLDs.
 
-- Some older browsers such as Internet Explorer 9 and below and Android 4.4 browser and below don't support the `pattern` attribute. iOS prior to 10.3 and safari for MacOS prior to 10.1 still allow forms to be submitted even if the pattern is incorrect. Check http://caniuse.com/#search=pattern for more details.
+- Some older browsers such as Internet Explorer 9 and below and Android 4.4 browser and below don't support the `pattern` attribute. iOS prior to 10.3 and safari for MacOS prior to 10.1 still allow forms to be submitted even if the pattern is incorrect. Check https://caniuse.com/#search=pattern for more details.
 
 - It doesn't give meaningful feedback if an email address is mistyped. So if someone enters `janedoe@gmail.con` they'll get an invalid message, but won't specify that the TLD is incorrect. I've used [Verimail](https://github.com/amail/Verimail.js) and [Mailcheck](https://github.com/mailcheck/mailcheck) with success before to give inline feedback on mistyped email addresses.
 
