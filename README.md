@@ -3,7 +3,7 @@
 An email address validator (which includes checking a valid TLD is used) in pure HTML with no JavaScript or dependencies. It could be used to improve the user experience by rejecting mistyped email addresses.
 
 ## Where can I see a demo?
-https://coliff.github.io/email-regex/
+https://coliff.github.io/html5-email-regex/
 
 
 ## How does it work?
