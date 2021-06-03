@@ -1,0 +1,24 @@
+{
+  "name": "html5-email-regex",
+  "version": "1.0.0",
+  "private": true,
+  "description": "my-dot-files",
+  "homepage": "https://github.com/coliff/html5-email-regex",
+  "bugs": {
+    "url": "https://github.com/coliff/html5-email-regex/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coliff/html5-email-regex"
+  },
+  "funding": {
+    "type": "PayPal",
+    "url": "https://paypal.me/coliff"
+  },
+  "license": "MIT",
+  "author": "C.Oliff (https://christianoliff.com)",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {}
+}
