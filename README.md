@@ -3,13 +3,12 @@
 An email address validator (which includes checking a valid TLD is used) in pure HTML with no JavaScript or dependencies. It could be used to improve the user experience by rejecting mistyped email addresses.
 
 ## Where can I see a demo?
-https://coliff.github.io/html5-email-regex/
 
+https://coliff.github.io/html5-email-regex/
 
 ## How does it work?
 
 It uses the HTML5 `pattern` attribute and uses the standard email regex [RFC 5322](https://www.w3.org/TR/2012/WD-html-markup-20120320/input.email.html) and expanded to check the end of the email address matches against a list of valid TLDs.
-
 
 ## Is it safe to use?
 
@@ -23,7 +22,6 @@ Kind of, but a few points:
 
 - It doesn't give meaningful feedback if an email address is mistyped. So if someone enters `janedoe@gmail.con` they'll get an invalid message, but won't specify that the TLD is incorrect. I've used [Verimail](https://github.com/amail/Verimail.js) and [Mailcheck](https://github.com/mailcheck/mailcheck) with success before to give inline feedback on mistyped email addresses.
 
-
 ## Are there any other recommended HTML attributes to add?
 
 - Always use `type="email"` rather than `type="text"` to take advantage of browser-based validation and feedback and provide hints to autocomplete/autofill users email address.
@@ -33,7 +31,6 @@ Kind of, but a few points:
 - For good measure, consider adding `maxlength="256"` as no email address can be longer.
 
 - If it's an order form/contact form or similar add the `required` tag to prevent submissions when this field is empty.
-
 
 ## How did you get the list of valid TLDs?
 

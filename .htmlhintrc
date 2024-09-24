@@ -1,15 +1,15 @@
 {
-    "tagname-lowercase": true,
-    "attr-lowercase": true,
-    "attr-value-double-quotes": true,
-    "doctype-first": true,
-    "tag-pair": true,
-    "spec-char-escape": true,
-    "id-unique": true,
-    "src-not-empty": true,
-    "attr-no-duplication": true,
-    "title-require": true,
-    "attr-value-not-empty": false,
     "alt-require": true,
-    "doctype-html5": true
+    "attr-lowercase": true,
+    "attr-no-duplication": true,
+    "attr-value-double-quotes": true,
+    "attr-value-not-empty": false,
+    "doctype-first": true,
+    "doctype-html5": true,
+    "id-unique": true,
+    "spec-char-escape": true,
+    "src-not-empty": true,
+    "tag-pair": true,
+    "tagname-lowercase": true,
+    "title-require": true
 }
