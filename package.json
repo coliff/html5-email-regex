@@ -2,7 +2,7 @@
   "name": "html5-email-regex",
   "version": "1.0.0",
   "private": true,
-  "description": "my-dot-files",
+  "description": "An email address validator in pure HTML using the pattern attribute",
   "homepage": "https://github.com/coliff/html5-email-regex",
   "bugs": {
     "url": "https://github.com/coliff/html5-email-regex/issues"
@@ -18,7 +18,7 @@
   "license": "MIT",
   "author": "C.Oliff (https://christianoliff.com)",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "dependencies": {}
+    "prettier": "npx prettier --write *.html",
+    "test": "npx htmlhint **/*.html"
+  }
 }
