@@ -6,5 +6,9 @@
     "coliff",
     "oliff"
   ],
-  "allowCompoundWords": true
+  "allowCompoundWords": true,
+  "ignorePaths": [
+    "README.md",
+    "index.html"
+  ]
 }
