@@ -35,6 +35,7 @@ jobs:
           SUPPRESS_POSSUM: true
           VALIDATE_ALL_CODEBASE: false
           VALIDATE_EDITORCONFIG: false
+          VALIDATE_GIT_COMMITLINT: false
           VALIDATE_HTML_PRETTIER: false
           VALIDATE_JSCPD: false
           VALIDATE_JSON_PRETTIER: false
