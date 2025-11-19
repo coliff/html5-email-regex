@@ -18,7 +18,9 @@
   "license": "MIT",
   "author": "C.Oliff (https://christianoliff.com)",
   "scripts": {
+    "pa11y": "npx pa11y https://coliff.github.io/html5-email-regex/",
     "prettier": "npx prettier --write *.html",
+    "spellcheck": "npx cspell \"**/*.yml\" \"**/*.json\" --no-progress",
     "test": "npx htmlhint **/*.html"
   }
 }
