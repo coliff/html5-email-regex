@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="viewport" content="width=device-width" />
     <title>Email Address Validator in pure HTML</title>
     <meta
       name="description"
@@ -21,46 +21,46 @@
     />
     <link rel="canonical" href="https://coliff.github.io/html5-email-regex/" />
     <meta name="fediverse:creator" content="@christianoliff@mastodon.social" />
+    <style>
+      body {
+        display: block;
+        font-family: "roboto", helvetica, arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #22699a;
+        background-image: linear-gradient(45deg, #0a1855 0, #38b4d9 100%);
+        margin-top: 0;
+        padding: 40px 0 40px 0;
+        width: 100%;
+      }
+      h1 {
+        color: #fff;
+        font-size: 1.5rem;
+        text-align: center;
+      }
+      form,
+      input {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 9px;
+        width: 298px;
+      }
+      input[type="email"]:user-invalid {
+        border: 2px solid red;
+        box-shadow: 0 0 1px 1px red;
+      }
+      input[type="email"]:user-valid {
+        border: 2px solid green;
+        box-shadow: 0 0 1px 1px green;
+      }
+      footer {
+        margin-top: 1rem;
+        text-align: center;
+      }
+    </style>
   </head>
-  <style>
-    body {
-      display: block;
-      font-family: "roboto", helvetica, arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #22699a;
-      background-image: linear-gradient(45deg, #0a1855 0, #38b4d9 100%);
-      margin-top: 0;
-      padding: 40px 0 40px 0;
-      width: 100%;
-    }
-    h1 {
-      color: #fff;
-      font-size: 1.5rem;
-      text-align: center;
-    }
-    form,
-    input {
-      margin-left: auto;
-      margin-right: auto;
-      padding: 9px;
-      width: 298px;
-    }
-    input[type="email"]:user-invalid {
-      border: 2px solid red;
-      box-shadow: 0 0 1px 1px red;
-    }
-    input[type="email"]:user-valid {
-      border: 2px solid green;
-      box-shadow: 0 0 1px 1px green;
-    }
-    footer {
-      margin-top: 1rem;
-      text-align: center;
-    }
-  </style>
   <body>
     <header>
       <h1>Email Address Validator in pure HTML</h1>

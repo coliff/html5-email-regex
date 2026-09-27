@@ -35,7 +35,7 @@ Kind of, but a few points:
 ## How did you get the list of valid TLDs?
 
 I scraped the official list with this command:
-`$ curl -s http://data.iana.org/TLD/tlds-alpha-by-domain.txt | sed '1d; s/^ *//; s/ *$//; /^$/d' | awk '{print length" "$0}' | sort -rn | cut -d' ' -f2- | tr '\n' '|' | tr '[:upper:]' '[:lower:]' | sed 's/\(.*\)./\1/'`
+`$ curl -s https://data.iana.org/TLD/tlds-alpha-by-domain.txt | sed '1d; s/^ *//; s/ *$//; /^$/d' | awk '{print length" "$0}' | sort -rn | cut -d' ' -f2- | tr '\n' '|' | tr '[:upper:]' '[:lower:]' | sed 's/\(.*\)./\1/'`
 
 and copied the output to the pattern attribute which resulted in:
 
