@@ -19,8 +19,8 @@
   "author": "C.Oliff (https://christianoliff.com)",
   "scripts": {
     "pa11y": "npx pa11y https://coliff.github.io/html5-email-regex/",
-    "prettier": "npx prettier@3.6.2 --write *.html",
+    "prettier": "npx prettier@3.9 --write *.html",
     "spellcheck": "npx cspell \"**/*.yml\" \"**/*.json\" --no-progress",
-    "test": "npx htmlhint **/*.html"
+    "test": "npx htmlhint \"**/*.html\""
   }
 }
