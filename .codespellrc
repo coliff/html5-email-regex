@@ -1,0 +1,3 @@
+[codespell]
+# TLDs in the email pattern regex
+ignore-words-list = capetown,chanel,fo,ist,onl,openen
